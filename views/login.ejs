@@ -1,0 +1,29 @@
+<%- include('./partials/header') %>
+
+
+    <div style="text-align: center;">
+        <h1>Log In</h1>
+        <%- include('./partials/flash') %>
+
+            <form action="/login" method="POST">
+
+                <input type="email" name="username" placeholder="email">
+                <br>
+                <br>
+                <input type="password" name="password" placeholder="password">
+                <br>
+                <br>
+                <input type="submit" value="Login!">
+                <br>
+                <br>
+            </form>
+            <button><a href="/auth/google">login in using Google !</a> </button>
+            <br>
+            <br>
+            <button><a href="/auth/facebook">login in using FACEBOOK !</a> </button>
+            <br>
+            <br>
+            <button><a href="/signup">signup</a></button>
+
+    </div>
+    <% include('./partials/footer') %>
